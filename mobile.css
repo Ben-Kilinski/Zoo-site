@@ -9,9 +9,9 @@ body{
     grid-template-rows: 11% 27% 27% 27% 10%;
     grid-template-areas: 
     "header header header header header"
-    "sidebar main main main main"
-    "sidebar main main main main"
-    "sidebar main main main main"
+    "main main main main main"
+    "main main main main main"
+    "main main main main main"
     "footer footer footer footer footer";
 }
 .header{
@@ -23,17 +23,12 @@ body{
     font-size: 70%;
     padding-left: 10vw;
     padding-right: 10vw;
+    display: flex;
+    flex-direction: column;
     
     
 }
-.sidebar{
-    background-color: blueviolet;
-    grid-area: sidebar;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 80%;
-    padding: 5%;
-}
+
 
 .main{
     background-color: cadetblue;
@@ -42,7 +37,7 @@ body{
 
 .row {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     padding: 0 4px;
   }
 
@@ -61,6 +56,8 @@ body{
 .footer{
     background-color: black;
     grid-area: footer;
+    display: flex;
+    flex-direction: column;
 }
 
 h5{
@@ -85,4 +82,3 @@ h6 {
 #picapau:hover{
     filter: sepia(50%);
 }
-

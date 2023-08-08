@@ -1,0 +1,89 @@
+@media screen and (max-width: 600px) {
+
+    body{
+        margin: 0%;
+        }
+    
+    .container{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        grid-template-areas: 
+        "header"
+        "main"
+        "main"
+        "main"
+        "footer";
+    } 
+    
+    .header{
+        background-color: tomato;
+        grid-area: header;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 70%;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        
+        
+    }
+   
+    
+    .main{
+        background-color: cadetblue;
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .row {
+        display: flex;
+        flex-direction: column;
+        padding: 0 4px;
+      }
+    
+    .column {
+        flex: 20%;
+        max-width: 24.2%;
+        padding: 0 4px;
+        
+      }
+      
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+      }
+    
+    .footer{
+        background-color: black;
+        grid-area: footer;
+    }
+    
+    h5{
+        text-align: center;
+        margin-top: 1.5%;
+        margin-bottom: 1%;
+    }
+    
+    h6 {
+        text-align: center;
+        margin-top: 1.5%;
+        margin-bottom: 1%;
+        font-style: oblique;
+    }
+    
+    #arara:hover {
+        filter: saturate(300%);
+    }
+    #jacare:hover{
+        filter: brightness(50%);
+    }
+    #picapau:hover{
+        filter: sepia(50%);
+    }
+    
+     
+} 
